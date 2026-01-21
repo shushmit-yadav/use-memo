@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react';
+import Todo from './Todo';
 
 export default function App() {
     const [count, setCount] = useState(0);
@@ -15,6 +16,8 @@ export default function App() {
             <p>Expensive Value: {expensiveValue}</p>
             <button onClick={() => setCount(count + 1)}>Increase Count</button>
             <button onClick={() => setCount(count - 1)}>Decrease Count</button>
+
+            <Todo />
         </div>
     );
 }
